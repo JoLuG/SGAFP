@@ -1,0 +1,63 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11/06/2023, 07:27:12 PM
+    Author     : wendy
+*/
+
+div.div-GIngresos{
+    position: absolute;
+    width: 45%;
+    height: 80%;
+    margin-left: 10px;
+}
+div.div-GGastos{
+    position: absolute;
+    width: 53%;
+    height: 80%;
+    margin-right: 10px;
+    right: 0%;
+}
+div.div-button-PDF{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 15%;
+}
+a.a-btn-RGas{
+    text-decoration: none;
+    border-radius: 10px;
+    color: #990066;
+    background: #ffffff;
+    border: 1px solid #990066;
+    padding: 2%;
+    padding-left: 30%;
+    padding-right: 30%;
+    transition: 0.5s;
+    font-weight: bold;
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+}
+a.a-btn-RGas:hover{
+    color: #fff;
+    background: #990066;
+}
+a.a-btn-RI{
+    text-decoration: none;
+    border-radius: 10px;
+    color: #660099;
+    background: #ffffff;
+    border: 1px solid #660099;
+    padding: 2%;
+    padding-left: 30%;
+    padding-right: 30%;
+    transition: 0.5s;
+    font-weight: bold;
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+}
+a.a-btn-RI:hover{
+    color: #fff;
+    background: #660099;
+}

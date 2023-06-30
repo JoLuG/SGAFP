@@ -1,0 +1,123 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30/05/2023, 01:53:41 PM
+    Author     : wendy
+*/
+
+button.btn-gas-menu{
+    width: 270px;
+    height: 140px;
+    font-size: 25pt;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    margin: 10px;
+    transition: 0.5s;
+    box-shadow: 0px 5px 10px #34495e ;
+    font-weight: bold;
+}
+i.icon-menu3{
+    font-size: 50pt;
+}
+button.btn-menu-1{
+    border: 2px solid #FF9B00;
+    color: #FF9B00;
+}
+button.btn-menu-2{
+    border: 2px solid #800080;
+    color: #800080;
+}
+button.btn-menu-3{
+    border: 2px solid #0000FF;
+    color: #0000FF;
+}
+button.btn-menu-4{
+    border: 2px solid #800000;
+    color: #800000;
+}
+button.btn-menu-5{
+    border: 2px solid #09A66A ;
+    color: #09A66A;
+}
+button.btn-menu-6{
+    border: 2px solid #FF0000;
+    color: #FF0000;
+}
+button.btn-menu-7{
+    border: 2px solid #008080;
+    color: #008080;
+}
+button.btn-menu-8{
+    border: 2px solid #B9D50A;
+    color: #B9D50A;
+}
+button.btn-menu-9{
+    border: 2px solid #F70C5A;
+    color: #F70C5A;
+}
+button.btn-menu-10{
+    border: 2px solid #FFE000;
+    color: #FFE000;
+}
+button.btn-menu-11{
+    border: 2px solid #808000;
+    color: #808000;
+}
+button.btn-menu-1:hover{
+    color: #FFF;
+    background-color: #FF9B00;
+    border: 0;
+}
+button.btn-menu-2:hover{
+    color: #FFF;
+    background-color: #800080;
+    border: 0;
+}
+button.btn-menu-3:hover{
+    color: #FFF;
+    background-color: #0000FF;
+    border: 0;
+}
+button.btn-menu-4:hover{
+    color: #FFF;
+    background-color: #800000;
+    border: 0;
+}
+button.btn-menu-5:hover{
+    color: #FFF;
+    background-color: #09A66A;
+    border: 0;
+}
+button.btn-menu-6:hover{
+    color: #FFF;
+    background-color: #FF0000;
+    border: 0;
+}
+button.btn-menu-7:hover{
+    color: #FFF;
+    background-color: #008080;
+    border: 0;
+}
+button.btn-menu-8:hover{
+    color: #FFF;
+    background-color: #B9D50A;
+    border: 0;
+}
+button.btn-menu-9:hover{
+    color: #FFF;
+    background-color: #F70C5A;
+    border: 0;
+}
+button.btn-menu-10:hover{
+    color: #FFF;
+    background-color: #FFE000;
+    border: 0;
+}
+button.btn-menu-11:hover{
+    color: #FFF;
+    background-color: #808000;
+    border: 0;
+}

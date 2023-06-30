@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebContextManager">
+    <option name="state">
+      <map>
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/INT/Crear-Cuenta.jsp" value="file://$PROJECT_DIR$/src/main/webapp/INT" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/INT/InicioSesion.jsp" value="file://$PROJECT_DIR$/src/main/webapp/INT" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/INT/Verificacion.jsp" value="file://$PROJECT_DIR$/src/main/webapp/INT" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/INT/prueba.jsp" value="file://$PROJECT_DIR$/src/main/webapp/INT" />
+      </map>
+    </option>
+  </component>
+</project>

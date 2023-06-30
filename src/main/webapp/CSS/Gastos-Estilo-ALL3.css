@@ -1,0 +1,179 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2/06/2023, 10:57:02 PM
+    Author     : wendy
+*/
+
+input.inp-text{
+    width: 100%;
+    height: 35px;
+    font-size: 12pt;
+    background-color: #fff;
+    border: 1px solid #0000FF;
+    border-radius: 5px;
+    outline: 0;
+}
+span.h1-titulo{
+    color: #0000FF;
+}
+label.etiqueta{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input.btn-Registrar{  
+    border-radius: 10px;
+    color: #0000FF;
+    background: #ffffff;
+    border: 1px solid #0000FF;
+    padding: 2%;
+    padding-left: 30%;
+    padding-right: 30%;
+    transition: 0.5s;
+    font-weight: bold;
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+    
+}
+
+input.btn-Registrar:hover{
+    color: #fff;
+    background: #0000FF;
+}
+
+select{
+    outline: 0;
+    color: #000;
+    background: #FFFFFF;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 12pt;
+    width: 100%;
+    border: 1px solid #0000FF;
+    height: 35px;
+}
+form.Form-Registro{
+    position: absolute;
+    top: 22%;
+    left: 25%;
+    width: 50%;
+    height: auto;
+}
+table.tb-btn-img1{
+    position: absolute;
+    bottom: 18%;
+    left: 32%;
+}
+i.icon-menu1{
+    font-size: 30pt;
+    color: #0000FF;
+    transition: 0.5s;
+}
+i.icon-menu1:hover{
+    color: rgba(201, 24, 127);
+}
+table.tb-info-ingresos{
+    width: 90%;
+    font-family: Arial;
+    border-collapse: collapse
+}
+thead.thead-titulos{
+    font-weight: bold;
+    font-size: 16pt;
+    text-align: center;
+    color: #34495e;
+}
+tr.tr-tbody{
+    background-color: #D9D9D9;
+    height: 30px;
+    font-size: 15px;
+    text-align: center;
+    border: 2px solid #FFFFFF;
+    transition: 0.5s;
+}
+tr.tr-tbody:hover{
+    background-color: #A9A9A9;
+    font-weight: bold;
+}
+td.td-br-tbody1{
+    border-radius: 20px 0 0 20px;
+}
+td.td-br-tbody2{
+    border-radius: 0 20px 20px 0;
+}
+td.td-op-tbody{
+    background: #FFFFFF
+}
+i.icon-menu2{
+    font-size: 15pt;
+    color: #0000FF;
+    transition: 0.5s;
+}
+i.icon-menu2:hover{
+    color: rgba(201, 24, 127);
+}
+div.overlay{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2
+}
+
+div.popup {
+    width: 40%;
+    height: 350px;    
+    border-radius: 20px;  
+    background-color: rgba(255, 255, 255);    
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+}
+form.Form-Registro-mod{
+    width: 50%;
+}
+a.a-exit-ing{
+    position: absolute;
+    top: 24%;
+    right: 420px;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18pt;
+    color: #A9A9A9;
+    transition: 0.4s;
+    height: auto;
+}
+a.a-exit-ing:hover{
+    color: #34495e;
+}
+
+div.popup-graficos {
+    width: 50%;
+    height: 450px;    
+    border-radius: 20px;  
+    background-color: rgba(255, 255, 255);    
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+}
+a.a-exit-graficos{
+    position: absolute;
+    top: 18%;
+    right: 360px;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18pt;
+    color: #A9A9A9;
+    transition: 0.4s;
+    height: auto;
+}
+a.a-exit-graficos:hover{
+    color: #34495e;
+}
+div.graficas-tam{
+    width: 90%;
+}

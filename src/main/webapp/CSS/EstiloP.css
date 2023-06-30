@@ -1,0 +1,196 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19/05/2023, 09:07:51 AM
+    Author     : wendy
+*/
+
+div.Cuadro-morado {
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(45deg, rgba(201, 24, 127),rgb(111, 11, 136), rgb(9, 165, 204));
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+
+body {
+    position: relative;
+    background: #FFFFFF;
+    font-family: Arial;
+    font-size: 15pt;
+}
+
+img.Logo {
+    width: 15%;
+    height: 18%;
+    position: absolute;
+    top: 3%;
+    left: 13%;
+}
+
+div.Cuadro-blanco {
+    position: absolute;
+    width: 55%;
+    height: 75vh;
+    left: 22%;
+    top: 20vh;
+    background: #ffffff;
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+
+div.Cuadro-blanco-1 {
+    position: absolute;
+    width: 55%;
+    height: 80vh;
+    left: 22%;
+    top: 10vh;
+    background: #ffffff;
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+
+h1.titulo {
+    position: absolute;
+    top: 1vh;
+    right: 25%;
+    font-family: Arial Black;
+    font-weight: bold;
+    font-size: 35pt;
+}
+
+p.texto-plano {
+    position: absolute;
+    top: 70px;
+    left: 26%;
+    font-family: Arial;
+    font-size: 20pt;
+}
+
+a.btn-principales {
+    position: absolute;
+    text-decoration: none;
+    border-radius: 10px;
+    color: #7972E6;
+    background: #ffffff;
+    border: 1px solid #7972E6;
+    padding: 2%;
+    padding-left: 270px;
+    padding-right: 270px;
+    transition: 0.5s;
+    font-weight: bold;
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+}
+
+a.btn-principales:hover {
+    color: #fff;
+    background: #7972E6;
+}
+
+a.btn1 {
+    top: 30vh;
+    left: 12%;
+}
+
+a.btn2 {
+    top: 43vh;
+    left: 12%;
+}
+
+span.line1 {
+    position: absolute;
+    left: 16%;
+    right: 60%;
+    top: 60vh;
+    bottom: 60vh;
+    border: 1px solid #000000;
+}
+
+span.line2 {
+    position: absolute;
+    left: 60%;
+    right: 15%;
+    top: 60vh;
+    bottom: 60vh;
+    border: 1px solid #000000;
+}
+
+span.texto {
+    position: absolute;
+    top: 57vh;
+    left: 43%;
+    font-weight: bold;
+    text-align: center;
+    font-size: 27pt;
+}
+
+/*-----------------------------------------*/
+input.inp-text{
+    width: 100%;
+    height: 35px;
+    font-size: 12pt;
+    background-color: #fff;
+    border: 1px solid #7972E6;
+    border-radius: 5px;
+    outline: 0;
+}
+
+form.Form-Registro{
+    position: absolute;
+    top: 22%;
+    left: 25%;
+    width: 50%;
+    height: auto;
+}
+form.Form-Registro1{
+    position: absolute;
+    top: 32%;
+    left: 25%;
+    width: 50%;
+    height: auto;
+}
+
+label.etiqueta{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input.btn-Registrar{  
+    border-radius: 10px;
+    color: #7972E6;
+    background: #ffffff;
+    border: 1px solid #7972E6;
+    padding: 2%;
+    padding-left: 30%;
+    padding-right: 30%;
+    transition: 0.5s;
+    font-weight: bold;
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+    
+}
+
+input.btn-Registrar:hover{
+    color: #fff;
+    background: #7972E6;
+}
+
+select{
+    outline: 0;
+    color: #000;
+    background: #FFFFFF;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 12pt;
+    width: 100%;
+    border: 1px solid #7972E6;
+    height: 35px;
+}
+a.a-regresar{
+    text-decoration: none;
+    font-size: 13pt;
+    color: #7972E6;
+}
