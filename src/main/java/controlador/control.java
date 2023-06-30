@@ -22,4 +22,6 @@ public interface control {
     public usuario muestraUsuario(String idusuario);
     
     public usuario verificacorreo(String correo, String password);
+
+    usuario modificarDatosUsuario(String idusuario, String nombre, String apaterno, String amaterno, String correo, String telefono);
 }

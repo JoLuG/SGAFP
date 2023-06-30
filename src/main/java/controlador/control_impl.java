@@ -38,6 +38,7 @@ public class control_impl implements control{
         }
     }
 
+
     @Override
     public void modificaUsuario(String idusuario, usuario usuario) {
         try {
@@ -116,6 +117,39 @@ public class control_impl implements control{
             }
         } catch (SQLException ex) {
             System.out.println("Error al ingresar dato: "+ex.getMessage());
+        }
+        return al;
+    }
+
+    @Override
+    public usuario modificarDatosUsuario(String idusuario, String nombre, String apaterno, String amaterno, String correo, String telefono) {
+        usuario al = new usuario();
+        try {
+            PreparedStatement ps = (PreparedStatement) new dao().conecta().prepareStatement("UPDATE usuario SET nombre=?, apaterno=?, amaterno=?, correo=?, telefono=? WHERE usuario LIKE ?");
+            ps.setString(1, nombre);
+            ps.setString(2, apaterno);
+            ps.setString(3, amaterno);
+            ps.setString(4, correo);
+            ps.setString(5, telefono);
+            ps.setString(6, idusuario);
+            ps.executeUpdate();
+            ps.close();
+
+            ResultSet rs = new dao().conecta().createStatement().executeQuery("SELECT * FROM usuario WHERE usuario LIKE '" + idusuario + "'");
+            while (rs.next()) {
+                al.setUsuario(rs.getString(1));
+                al.setNombre(rs.getString(2));
+                al.setApaterno(rs.getString(3));
+                al.setAmaterno(rs.getString(4));
+                al.setCorreo(rs.getString(5));
+                al.setPassword(rs.getString(6));
+                al.setFoto(rs.getString(7));
+                al.setGenero(rs.getString(8));
+                al.setTelefono(rs.getString(9));
+            }
+            rs.close();
+        } catch (SQLException ex) {
+            System.out.println("Error al modificar los datos del usuario: " + ex.getMessage());
         }
         return al;
     }

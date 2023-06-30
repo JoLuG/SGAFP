@@ -29,6 +29,13 @@
             <artifactId>jasperreports</artifactId>
             <version>6.20.0</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/commons-fileupload/commons-fileupload -->
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>1.5</version>
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/jakarta.mail/jakarta.mail-api -->
         <dependency>
             <groupId>com.sun.mail</groupId>
