@@ -74,7 +74,7 @@
             <div class="boton-container">
             <a href="InicioSesion.jsp" class="boton">Iniciar Sesion</a><br>
 
-            <a href="#" class="boton">Recuperar Contraseña</a><br>
+          <!--  <a href="#" class="boton">Recuperar Contraseña</a><br>-->
             </div>
 
         </center>

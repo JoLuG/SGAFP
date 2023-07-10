@@ -60,56 +60,6 @@
 	</background>
 	<title>
 		<band height="151" splitType="Stretch">
-			<image>
-				<reportElement x="0" y="0" width="555" height="24" uuid="b948cec2-9f65-4f28-b7f1-2f8e88798c68"/>
-				<imageExpression><![CDATA["C:\\Users\\wendy\\Documents\\NetBeansProjects\\SAFP\\web\\IMG\\BarraTitulo.jpg"]]></imageExpression>
-			</image>
-			<staticText>
-				<reportElement x="3" y="1" width="550" height="24" forecolor="#FFFFFF" uuid="78d26c42-de90-4142-aa63-0a3ff555a979"/>
-				<textElement textAlignment="Center">
-					<font fontName="Arial" size="16" isBold="true"/>
-				</textElement>
-				<text><![CDATA[SGAFP]]></text>
-			</staticText>
-			<image>
-				<reportElement x="13" y="28" width="92" height="92" uuid="2d0cd145-a377-445b-89a5-a1c2e8460221"/>
-				<imageExpression><![CDATA[$P{Foto}]]></imageExpression>
-			</image>
-			<textField>
-				<reportElement x="184" y="78" width="238" height="20" uuid="98d30711-efe6-4a6d-9753-b1596b5a50d0"/>
-				<textElement>
-					<font fontName="Arial" size="12"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{correo}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="184" y="58" width="238" height="20" uuid="4af02af8-6d02-4376-b106-44d2ab031cfd"/>
-				<textElement>
-					<font fontName="Arial" size="12"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{nombre}+" "+$F{apaterno}+" "+$F{amaterno}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="184" y="98" width="238" height="20" uuid="6b59eeb2-7b43-4c06-89ea-d9bc253f987d"/>
-				<textElement>
-					<font fontName="Arial" size="12"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{telefono}]]></textFieldExpression>
-			</textField>
-			<staticText>
-				<reportElement x="121" y="98" width="58" height="20" uuid="2bf0e8a5-50b8-45fa-8b93-824b56cb3e65"/>
-				<textElement>
-					<font fontName="Arial" size="12" isBold="true"/>
-				</textElement>
-				<text><![CDATA[Teléfono: ]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="121" y="78" width="58" height="20" uuid="6142d447-dfe7-4733-84c3-155fea0215d4"/>
-				<textElement>
-					<font fontName="Arial" size="12" isBold="true"/>
-				</textElement>
-				<text><![CDATA[Correo: ]]></text>
-			</staticText>
 			<staticText>
 				<reportElement x="121" y="58" width="58" height="20" uuid="46b0f5b3-fc9d-4e9e-9b94-3483757dd51b"/>
 				<textElement>
@@ -117,10 +67,6 @@
 				</textElement>
 				<text><![CDATA[Nombre: ]]></text>
 			</staticText>
-			<image>
-				<reportElement x="0" y="125" width="555" height="24" uuid="bcc19613-6630-45e0-b8aa-e1a605ac96e6"/>
-				<imageExpression><![CDATA["C:\\Users\\wendy\\Documents\\NetBeansProjects\\SAFP\\web\\IMG\\BarraTitulo.jpg"]]></imageExpression>
-			</image>
 			<staticText>
 				<reportElement x="154" y="29" width="293" height="20" forecolor="#999999" uuid="9f19b34a-132c-44c9-b2ad-49919824ed1a"/>
 				<textElement textAlignment="Center">
@@ -142,6 +88,45 @@
 				</textElement>
 				<textFieldExpression><![CDATA["$ "+$P{Tingresos}]]></textFieldExpression>
 			</textField>
+			<textField>
+				<reportElement x="184" y="78" width="238" height="20" uuid="98d30711-efe6-4a6d-9753-b1596b5a50d0"/>
+				<textElement>
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{correo}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="13" y="29" width="92" height="92" uuid="2d0cd145-a377-445b-89a5-a1c2e8460221"/>
+				<imageExpression><![CDATA[$P{Foto}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="184" y="58" width="238" height="20" uuid="4af02af8-6d02-4376-b106-44d2ab031cfd"/>
+				<textElement>
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombre}+" "+$F{apaterno}+" "+$F{amaterno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="184" y="98" width="238" height="20" uuid="6b59eeb2-7b43-4c06-89ea-d9bc253f987d"/>
+				<textElement>
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{telefono}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="121" y="78" width="58" height="20" uuid="6142d447-dfe7-4733-84c3-155fea0215d4"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Correo: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="121" y="98" width="58" height="20" uuid="2bf0e8a5-50b8-45fa-8b93-824b56cb3e65"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Teléfono: ]]></text>
+			</staticText>
 		</band>
 	</title>
 	<columnHeader>
@@ -189,10 +174,6 @@
 	</detail>
 	<columnFooter>
 		<band height="192" splitType="Stretch">
-			<image>
-				<reportElement x="0" y="167" width="555" height="24" uuid="0e98cdfe-350e-4699-ad89-18e314bf1da5"/>
-				<imageExpression><![CDATA["C:\\Users\\wendy\\Documents\\NetBeansProjects\\SAFP\\web\\IMG\\BarraTitulo.jpg"]]></imageExpression>
-			</image>
 			<stackedBar3DChart>
 				<chart>
 					<reportElement x="3" y="0" width="550" height="167" uuid="179b8bfb-6e73-4fb7-8472-dbcb893729ad"/>

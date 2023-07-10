@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/5ac1168347.js" crossorigin="anónimo"></script>
+    <script src="https://kit.fontawesome.com/5ac1168347.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../CSS/Estilo-Perfil.css">
     <link rel="stylesheet" href="../CSS/Principal-Estilo-Menu-Principal.css">
     <link rel="stylesheet" href="../CSS/Estilos-Ingresos.css">
@@ -51,6 +51,7 @@
     <span>SGAFP</span>
     <a class="CSesion" href="CerrarSesionServlet"><i title="Cerrar Sesión" class="fas fa-sign-out-alt icon-tam"></i></a>
 </div>
+
 <center>
     <nav>
         <a href="Perfil.jsp?usuario=<%=us.getUsuario()%>"><b>Perfil</b>  <br> <i class="far fa-address-card icon-menu"></i></a>
@@ -87,15 +88,17 @@
                 </tr>
             </table>
 
-            <!-- Botón para abrir el overlay popup -->
-            <button id="editar-btn" class="editar-btn">Actualizar información personal</button>
+            <button id="editar-btn" class="editar-btn" style="background-color: #c9187f;">
+                <span style="color: #fff;">Actualizar información personal</span>
+                <i class="fas fa-edit" style="color: #fff;"></i>
+            </button>
 
         </center>
     </div>
     <div class="div-izquierdo">
         <br><br>
         <center>
-            <img src="<%=us.getFoto()%>" alt="Foto" class="img-foto br-img-foto">
+            <img src="<%=us.getFoto()%>" alt="Foto" class="img-foto br-img-foto" id="foto-usuario">
         </center>
         <br><br>
         <table class="tb-btn-img">
@@ -113,6 +116,7 @@
             </tr>
         </table>
     </div>
+
 </div>
 
 <!-- Overlay popup -->
@@ -145,6 +149,21 @@
 </div>
 
 <script>
+    // Obtener la referencia a la imagen del usuario
+    const fotoUsuario = document.getElementById('foto-usuario');
+
+    // Función para actualizar la imagen
+    function actualizarFoto() {
+        // Agregar una cadena de consulta única a la URL de la imagen
+        const nuevaURL = `<%=us.getFoto()%>?v=${Date.now()}`;
+
+        // Asignar la nueva URL a la imagen
+        fotoUsuario.src = nuevaURL;
+    }
+
+    // Llamar a la función para actualizar la foto cuando se cargue la página
+    window.addEventListener('load', actualizarFoto);
+
     const editarBtn = document.getElementById('editar-btn');
     const overlay = document.getElementById('overlay');
     const cerrarBtn = document.getElementById('cerrar-btn');

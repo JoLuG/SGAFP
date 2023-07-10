@@ -16,18 +16,12 @@ import net.sf.jasperreports.engine.JasperPrint;
 import net.sf.jasperreports.engine.JasperReport;
 import net.sf.jasperreports.engine.util.JRLoader;
 
-/**
- *
- * @author wendy
- */
+
 public class PDF {
-    public static void main(String[] args){
-        new PDF().creaPDF3("Prueba2", "chris496", "500", "500", "puedes ahorrar más", "C:\\Users\\wendy\\Documents\\NetBeansProjects\\SAFP\\web\\IMGPerfil\\2.jpg");
-        //new controlador.PDF().creaPDF3("prueba3","AIDY901124MMCVZR06","C:\\Users\\wendy\\Pictures\\iconos musica\\musica.png");
-    }
+
     public void creaPDF2(String nom, String usuario, String Tgastos, String Total, String Mensaje, String Foto){
         try {
-            File file = new File("C:\\Users\\wendy\\Documents\\NetBeansProjects\\SAFP\\web\\Jasper\\report1.jasper");
+            File file = new File("C:\\Users\\jorge\\Documents\\Codigos\\Daniel\\SA\\src\\main\\webapp\\Jasper\\report1.jasper");
             JasperReport jp = (JasperReport) JRLoader.loadObject(file) ;
             HashMap param = new HashMap();
             param.put("parameter1", usuario);
@@ -36,7 +30,7 @@ public class PDF {
             param.put("Mensaje", Mensaje);
             param.put("Foto", Foto);
             JasperPrint jas = JasperFillManager.fillReport(jp, param, new dao().conecta());
-            JasperExportManager.exportReportToPdfFile(jas, "C:\\Users\\wendy\\Documents\\NetBeansProjects\\SAFP\\web\\PDF\\"+nom+".pdf");
+            JasperExportManager.exportReportToPdfFile(jas, "C:\\Users\\jorge\\Documents\\Codigos\\Daniel\\SA\\src\\main\\webapp\\PDF\\"+nom+".pdf");
         } catch (JRException ex) {
             Logger.getLogger(PDF.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -44,7 +38,7 @@ public class PDF {
     }
     public void creaPDF3(String nom, String usuario, String Tingresos, String Total, String Mensaje, String Foto){
         try {
-            File file = new File("C:\\Users\\wendy\\Documents\\NetBeansProjects\\SAFP\\web\\Jasper\\report2.jasper");
+            File file = new File("C:\\Users\\jorge\\Documents\\Codigos\\Daniel\\SA\\src\\main\\webapp\\Jasper\\report2.jasper");
             JasperReport jp = (JasperReport) JRLoader.loadObject(file) ;
             HashMap param = new HashMap();
             param.put("parameter1", usuario);
@@ -53,7 +47,7 @@ public class PDF {
             param.put("Mensaje", Mensaje);
             param.put("Foto", Foto);
             JasperPrint jas = JasperFillManager.fillReport(jp, param, new dao().conecta());
-            JasperExportManager.exportReportToPdfFile(jas, "C:\\Users\\wendy\\Documents\\NetBeansProjects\\SAFP\\web\\PDF\\"+nom+".pdf");
+            JasperExportManager.exportReportToPdfFile(jas, "C:\\Users\\jorge\\Documents\\Codigos\\Daniel\\SA\\src\\main\\webapp\\PDF\\"+nom+".pdf");
         } catch (JRException ex) {
             Logger.getLogger(PDF.class.getName()).log(Level.SEVERE, null, ex);
         }

@@ -1,8 +1,3 @@
-<%-- 
-    Document   : Reportes
-    Created on : 20/06/2023, 08:29:30 PM
-    Author     : wendy
---%>
 
 <%@page import="modelo.gasto"%>
 <%@page import="java.util.ArrayList"%>
@@ -37,7 +32,7 @@
             <% 
                 String FotoCadena =us.getFoto();
                 String nombreArchivo = FotoCadena.substring(FotoCadena.lastIndexOf("/") + 1);
-                String Foto = "C:\\Users\\wendy\\Documents\\NetBeansProjects\\SAFP\\web\\IMGPerfil\\"+nombreArchivo;
+                String Foto = "C:\\Users\\jorge\\Documents\\Codigos\\Daniel\\SA\\src\\main\\webapp\\IMGPerfil\\"+nombreArchivo;
                 int Tingresos = 0;
                 int Tgastos = 0;
                 int SubTotal = 0;

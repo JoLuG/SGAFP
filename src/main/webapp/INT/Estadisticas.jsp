@@ -218,16 +218,12 @@
                           }
                         });
                       </script>
+                <form action="procesar.py" method="post">
+                    <input type="submit" value="Obtener consejos" />
+                </form>
+
             </div>
             <div class="div-button-PDF">
-                <center>
-                    <table style="width: 80%">
-                        <tr>
-                            <td><a href="Reportes.jsp?usuario=<%=us.getUsuario()%>" class="a-btn-RI">Reporte Ingresos</a> </td>  
-                            <td><a href="RGG.jsp?usuario=<%=us.getUsuario()%>" class="a-btn-RGas">Reporte Gastos</a> </td>  
-                        </tr>
-                    </table>
-                </center>
             </div>
         </div>    
     </body>

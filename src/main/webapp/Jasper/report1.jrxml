@@ -33,7 +33,7 @@
 	<parameter name="Mensaje" class="java.lang.String"/>
 	<parameter name="Foto" class="java.lang.String"/>
 	<queryString>
-		<![CDATA[SELECT .nombre, usuario.apaterno, usuario.amaterno, usuario.correo, usuario.foto, usuario.telefono, categorias.nombre AS gas_desc, SUM(gastos.monto) FROM gastos, usuario, categorias WHERE gastos.usuario LIKE $P{parameter1} AND usuario.usuario LIKE $P{parameter1} AND gastos.categoria = categorias.idcategoria GROUP BY categorias.nombre HAVING COUNT(*)>0]]>
+		<![CDATA[SELECT usuario.nombre, usuario.apaterno, usuario.amaterno, usuario.correo, usuario.foto, usuario.telefono, categorias.nombre AS gas_desc, SUM(gastos.monto) FROM gastos, usuario, categorias WHERE gastos.usuario LIKE $P{parameter1} AND usuario.usuario LIKE $P{parameter1} AND gastos.categoria = categorias.idcategoria GROUP BY categorias.nombre HAVING COUNT(*)>0]]>
 	</queryString>
 	<field name="nombre" class="java.lang.String">
 		<fieldDescription><![CDATA[]]></fieldDescription>
@@ -60,17 +60,6 @@
 	</background>
 	<title>
 		<band height="151" splitType="Stretch">
-			<image>
-				<reportElement x="0" y="0" width="555" height="24" uuid="b948cec2-9f65-4f28-b7f1-2f8e88798c68"/>
-				<imageExpression><![CDATA["C:\\Users\\wendy\\Documents\\NetBeansProjects\\SAFP\\web\\IMG\\BarraTitulo.jpg"]]></imageExpression>
-			</image>
-			<staticText>
-				<reportElement x="3" y="1" width="550" height="24" forecolor="#FFFFFF" uuid="78d26c42-de90-4142-aa63-0a3ff555a979"/>
-				<textElement textAlignment="Center">
-					<font fontName="Arial" size="16" isBold="true"/>
-				</textElement>
-				<text><![CDATA[SGAFP]]></text>
-			</staticText>
 			<image>
 				<reportElement x="13" y="28" width="92" height="92" uuid="2d0cd145-a377-445b-89a5-a1c2e8460221"/>
 				<imageExpression><![CDATA[$P{Foto}]]></imageExpression>
@@ -117,10 +106,6 @@
 				</textElement>
 				<text><![CDATA[Nombre: ]]></text>
 			</staticText>
-			<image>
-				<reportElement x="0" y="125" width="555" height="24" uuid="bcc19613-6630-45e0-b8aa-e1a605ac96e6"/>
-				<imageExpression><![CDATA["C:\\Users\\wendy\\Documents\\NetBeansProjects\\SAFP\\web\\IMG\\BarraTitulo.jpg"]]></imageExpression>
-			</image>
 			<staticText>
 				<reportElement x="154" y="29" width="293" height="20" forecolor="#999999" uuid="9f19b34a-132c-44c9-b2ad-49919824ed1a"/>
 				<textElement textAlignment="Center">
@@ -189,10 +174,6 @@
 	</detail>
 	<columnFooter>
 		<band height="192" splitType="Stretch">
-			<image>
-				<reportElement x="0" y="167" width="555" height="24" uuid="0e98cdfe-350e-4699-ad89-18e314bf1da5"/>
-				<imageExpression><![CDATA["C:\\Users\\wendy\\Documents\\NetBeansProjects\\SAFP\\web\\IMG\\BarraTitulo.jpg"]]></imageExpression>
-			</image>
 			<lineChart>
 				<chart>
 					<reportElement x="3" y="0" width="550" height="167" uuid="d134ece1-a898-4f02-a87c-0f20740d077e"/>
